@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Shopping Cart</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="icon" type="image/png" href="images/shopping.png" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,900" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/16b5491361.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	
+	<div class="CartContainer">
+		<div class="Header">
+			<h3 class="Heading">Shopping Cart</h3>
+			<h5 class="Action" id="removeAll">Remove all</h5>
+		</div>
+
+		<div class="Cart-Items" id="firstItem">
+			<div class="image-box">
+				<img src="images/apple.png" style= "height:120px"  />
+			</div>
+			<div class="about">
+				<h1 class="title">Apple Juice</h1>
+				<h3 class="subtitle">250ml</h3>
+				<img src="images/veg.png" style= "height:30px" />
+			</div>
+			<div class="counter">
+				<div class="btn" id="increment">+</div>
+				<div class="count" id="count">1</div>
+				<div class="btn" id="decrement">-</div>
+			</div>
+			<div class="prices">
+				<div class="amount" id="amount0">2.99</div> <span>$</span>
+				<div id='rem1' class="remove"><u>Remove</u></div>
+				<i class="fa-solid fa-heart"></i>
+			</div>
+		</div>
+		
+		<div class="Cart-Items pad" id="secondItem">
+			<div class="image-box">
+				<img src="images/grapes.png" style= "height:120px"  />
+			</div>
+			<div class="about">
+				<h1 class="title">Grapes Juice</h1>
+				<h3 class="subtitle">250ml</h3>
+				<img src="images/veg.png" style= "height:30px" />
+			</div>
+			<div class="counter">
+				<div class="btn" id="increment1">+</div>
+				<div class="count" id="count1">1</div>
+				<div class="btn" id="decrement1">-</div>
+			</div>
+			<div class="prices">
+				<div class="amount" id="amount1">3.19</div> <span>$</span>
+				<div id='rem2' class="remove"><u>Remove</u></div>
+				<i class="fa-solid fa-heart"></i>
+			</div>
+		</div>
+		<hr>
+		<div class="checkout">
+			<div class="total">
+				<div>
+					<div class="Subtotal">Sub-Total</div>
+					<div class="items">2 items</div>
+				</div>
+				<div class="total-amount" id="total">6.18</div>
+			</div>
+			<button class="button">Checkout</button>
+		</div>
+	</div>
+
+</body>
+<script src="index.js"></script>
+</html>
